@@ -66,3 +66,13 @@ hover and add over section
 Image
 <br>
 ![alt text here](link of that)
+
+
+Table <br>
+```| Tb1 | tb2 |``` <br>
+```| --- | --- |``` <br>
+```| tb1 | tb2 |```
+
+| Plugin | README |
+| ------ | ------ |
+| Dropbox | hello |
