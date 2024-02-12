@@ -35,6 +35,7 @@ sum();
 ```
 > o/p: 20
 
+### Function scoping / lexical scoping
 ```
 functions defined within other functions (known as "nested functions") are only accessible within
 the scope of the outer function. They cannot be called from outside of the outer function.
