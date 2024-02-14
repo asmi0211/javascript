@@ -78,3 +78,40 @@ doadd();
 ```
 O/P:
 > 300 dosub
+
+
+### Closure / nested functions / function nesting
+```
+function mostOuterfun() {
+    var a = 10;
+    let b = 20;
+    var res = function innerfun() {
+        var sum = function innerMostfun() {
+            var ans = a + b;
+            document.write(ans);
+            console.log("inner one")
+            return ans;
+        }
+        sum()
+        console.log("inner two");
+        return a;
+    }
+    res();
+}
+mostOuterfun();
+```
+
+O/P: 
+> 30 <br>
+> inner one <br>
+> inner two <br>
+
+```
+
+The above procedure, where a function is defined inside another function and then called within the outer function, is commonly known as "nested functions" or "function nesting" in JavaScript.
+
+Nested functions are functions defined within the scope of another function. They have access to the variables and parameters of their outer function and can also access global variables. However, they are not accessible outside of their outer function's scope.
+function is defined inside another function in JavaScript is often referred to as "closure." A closure is a combination of a function and the lexical environment within which that function was declared. This lexical environment consists of any local variables that were in-scope at the time the closure was created.
+
+In JavaScript, when you define a function within another function, the inner function has access to the outer function's variables and parameters, even after the outer function has finished executing. This is because the inner function maintains a reference to the variables of its outer function, forming a closure.
+```
