@@ -165,3 +165,18 @@ xyz();
   |It can be declared without initialization. | It can be declared without initialization. |  It cannot be declared without initialization.. |
   |It can be accessed without initialization as its default value is “undefined”. | It cannot be accessed without initialization otherwise it will give ‘referenceError’. |  It cannot be accessed without initialization, as it cannot be declared without initialization.. |
   |hoisting done, with initializing as ‘default’ value | Hoisting is done, but not initialized (this is the reason for the error when we access the let variable before declaration/initialization |  Hoisting is done, but not initialized (this is the reason for the error when we access the const variable before declaration/initialization |
+  
+  
+# ```Best Example of Function and Block scoped```
+```
+function example() {
+    {
+        var a = 100; // o/p:100
+        //let a =100 // o/p Error: ReferenceError: a is not defined
+
+    }
+    console.log(a); // Output: 10
+}
+example();
+console.log(a); // ReferenceError: a is not defined
+```
