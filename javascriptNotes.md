@@ -115,3 +115,26 @@ function is defined inside another function in JavaScript is often referred to a
 
 In JavaScript, when you define a function within another function, the inner function has access to the outer function's variables and parameters, even after the outer function has finished executing. This is because the inner function maintains a reference to the variables of its outer function, forming a closure.
 ```
+
+
+Main difference in between Var and let
+
+```
+function abc(){
+for (a=10;a<20;a++){
+    console.log("I'm var");
+    }
+console.log("Showing a's value:", a);
+return (a);
+}
+abc();
+
+function xyz(){
+   for (let b=10;b<15;b++){
+    console.log("I'm let");
+    }
+    console.log(b); // it will result into error with 
+    //ReferenceError: b is not defined
+}
+xyz();
+```
