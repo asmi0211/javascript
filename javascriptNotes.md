@@ -180,3 +180,54 @@ function example() {
 example();
 console.log(a); // ReferenceError: a is not defined
 ```
+
+# ```Can be reassigned example```
+```
+// function abc(){
+//     var a = 10;
+//     console.log(a);
+//     function abc1(){
+//         console.log(a);
+//     }
+//     abc1();
+// }
+// abc();
+// console.log(a);
+
+
+
+// function abc1(){
+//     let a1 = 10;
+//     console.log(a1);
+//     function abc11(){
+//         console.log(a1);
+//     }
+//     abc11();
+// }
+// abc1();
+// console.log(a1);
+
+
+function var_example() {
+    {
+        var a = 100; 
+        console.log(a); // Output: 100
+        var a =20;
+        console.log(a); // 20
+    }
+    
+}
+var_example();
+
+function let_example() {
+    {
+        let a = 100; 
+        console.log(a); // Output: 100
+        let a =20;
+        console.log(a); //SyntaxError: Identifier 'a' has already been declared
+
+    }
+    
+}
+let_example();
+```
