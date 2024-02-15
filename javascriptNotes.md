@@ -1,6 +1,6 @@
 # Javascript Notes
 
-### DOM : **Document Object Model**
+# ```1.DOM : Document Object Model ```
 ```
 DOM is nothing but Document Object Model where
 Document is a file, Object is a tag/element,Model is a Layout structure
@@ -8,10 +8,11 @@ DOM is a model which is actual representation of your code, it shows all your co
 we can see it via console -> elements in inspect tool
 ```
 
-### Call Stack
+# ```2. Call Stack```
 ```
 the call stack is a mechanism used to keep track of function calls in a program.
-Whenever a function is invoked, a new frame is pushed onto the call stack representing that function call.
+Whenever a function is invoked, a new frame is pushed onto the call stack representing that
+function call.
 When a function completes its execution, its frame is popped off the call stack.
 ```
 ```
@@ -35,7 +36,7 @@ sum();
 ```
 > o/p: 20
 
-### Function scoping / lexical scoping
+# ```3.Function scoping / lexical scoping```
 ```
 functions defined within other functions (known as "nested functions") are only accessible within
 the scope of the outer function. They cannot be called from outside of the outer function.
@@ -80,7 +81,7 @@ O/P:
 > 300 dosub
 
 
-### Closure / nested functions / function nesting
+# ```Closure / nested functions / function nesting```
 ```
 function mostOuterfun() {
     var a = 10;
@@ -115,10 +116,26 @@ function is defined inside another function in JavaScript is often referred to a
 
 In JavaScript, when you define a function within another function, the inner function has access to the outer function's variables and parameters, even after the outer function has finished executing. This is because the inner function maintains a reference to the variables of its outer function, forming a closure.
 ```
+# ```Main difference in between Var and let```
 
+```
+// Using let
+for (let i = 0; i < 3; i++) {
+    console.log("Index with let: " + i);
+}
+// console.log(i); //We cannot access the let outside the loop bz let is function scoped, it gives error like
+// ReferenceError: i is not defined
+```
+```
+// Using Var
+for (var j = 0; j < 3; j++) {
+    console.log("Index with let: " + j);
+}
+console.log(j); // here it provides o/p as a 3
+// here we are tring to access i after the loop, its value would be 3, as it's the value that caused the loop to terminate. This is because var doesn't have block-level scope, so it's not limited to just the loop.
+```
 
-Main difference in between Var and let
-
+**Another Example**
 ```
 function abc(){
 for (a=10;a<20;a++){
