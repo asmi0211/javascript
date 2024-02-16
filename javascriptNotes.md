@@ -63,8 +63,8 @@ outerFunction(); // Call the outer function to start execution
 innerFunction(); // Error: innerFunction is not defined globally
 ```
 
-> O/P
-> Inner function is called. 
+> O/P <br>
+> Inner function is called. <br>
 > Outer function is called.
 
 ```
@@ -83,8 +83,8 @@ function doadd(){
 }
 doadd();
 ```
-> O/P:
-> domultiply function executed with res: 30
+> O/P <br>
+> domultiply function executed with res: 30 <br>
 > dosub function executed
 
 
@@ -110,9 +110,9 @@ function mostOuterfun() {
 mostOuterfun();
 ```
 
-> O/P: 
-> 30 
-> inner one 
+> O/P <br>
+> 30 <br>
+> inner one <br> 
 > inner two 
 
 The above procedure, where a function is defined inside another function and then called within the outer function, is commonly known as "nested functions" or "function nesting" in JavaScript.
@@ -136,8 +136,8 @@ function fun_example() {
 fun_example();
 console.log(a); // ReferenceError: a is not defined
 ```
-> O/P
-> 100
+> O/P <br>
+> 100 <br>
 > ReferenceError: a is not defined
 
 **Block Scope:**
@@ -154,7 +154,7 @@ function blk_example() {
 blk_example();
 console.log(a); // ReferenceError: a is not defined
 ```
-> O/P
+> O/P <br>
 > ReferenceError: a is not defined
 
 ### **Examples for Fnctional and block scoped**
@@ -168,10 +168,10 @@ console.log(i); //We cannot access the let outside the loop bz
 //let is function scoped, it gives error like
 // ReferenceError: i is not defined
 ```
-> O/P
-> Index with let: 0
-> Index with let: 1
-> Index with let: 2
+> O/P <br>
+> Index with let: 0 <br>
+> Index with let: 1 <br>
+> Index with let: 2 <br>
 > ERROR! : ReferenceError: i is not defined
 
 ```
@@ -185,11 +185,12 @@ console.log(j); // here it provides o/p as a 3
 //This is because var doesn't have block-level scope,
 //so it's not limited to just the loop.
 ```
-> O/P
-> Index with let: 0
-> Index with let: 1
-> Index with let: 2
+> O/P <br>
+> Index with let: 0 <br>
+> Index with let: 1 <br>
+> Index with let: 2 <br>
 > 3
+
 **Another Example for Function scoped and block scoped**
 ```
 function abc(){
@@ -201,9 +202,9 @@ return (a);
 }
 abc();
 ```
-> O/P
-> I'm var
-> I'm var
+> O/P <br>
+> I'm var <br>
+> I'm var <br>
 > Showing a's value: 3
 ```
 function xyz(){
@@ -215,10 +216,11 @@ function xyz(){
 }
 xyz();
 ```
-> O/P
-> I'm let
-> I'm let
+> O/P <br>
+> I'm let <br>
+> I'm let <br>
 > ERROR! : ReferenceError: b is not defined
+
 # ```Can be reassigned example```
 **var can be updated but cannot be re-declared into the scope…**
 ```
@@ -233,8 +235,8 @@ function var_example() {
 }
 var_example();
 ```
-> O/P
-> 100
+> O/P <br>
+> 100 <br>
 > 20
 
 **let can be updated but cannot be re-declared into the scope…**
@@ -250,8 +252,8 @@ function let_example() {
 }
 let_example();
 ```
-> O/P
-> 100 
+> O/P <br>
+> 100 <br>
 > SyntaxError: Identifier 'a' has already been declared
 
 # ***```4.Difference between var,let,const```***
@@ -264,4 +266,29 @@ let_example();
   |It can be accessed without initialization as its default value is “undefined”. | It cannot be accessed without initialization otherwise it will give ‘referenceError’. |  It cannot be accessed without initialization, as it cannot be declared without initialization.. |
   |hoisting done, with initializing as ‘default’ value | Hoisting is done, but not initialized (this is the reason for the error when we access the let variable before declaration/initialization |  Hoisting is done, but not initialized (this is the reason for the error when we access the const variable before declaration/initialization |
   
+### ***```Hosting```***
+Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase. This means that regardless of where variables and functions are declared in your code, they are processed before the code is executed.
 
+In simpler terms, imagine JavaScript's hoisting behavior like this:
+- Before your code runs, JavaScript quickly scans it and "hoists" variable and function declarations to the top.
+- Variable declarations (using var, let, or const) are initialized with a value of undefined by default.
+- Function declarations are completely hoisted along with their definitions.
+- However, only the declarations are hoisted, not the assignments.
+```
+console.log(x); // undefined, because the declaration is hoisted
+var x = 5;
+
+foo(); // "Hello, I'm foo!", because the entire function declaration is hoisted
+function foo() {
+  console.log("Hello, I'm foo!");
+}
+
+bar(); // TypeError: bar is not a function, because only the declaration is hoisted, not the definition
+var bar = function() {
+  console.log("Hello, I'm bar!");
+};
+```
+> O/P <br>
+> undefined <br>
+> Hello, I'm foo! <br>
+> ERROR! : TypeError: bar is not a function
