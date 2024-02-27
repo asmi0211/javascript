@@ -292,3 +292,67 @@ var bar = function() {
 > undefined <br>
 > Hello, I'm foo! <br>
 > ERROR! : TypeError: bar is not a function
+
+
+
+### ***```Data Types```*** 
+![alt text](https://dotnettrickscloud.blob.core.windows.net/img/javascript/js-datatype.png)
+
+### ***example***
+```
+// Numbers:
+let length = 16;
+let weight = 7.5;
+
+//undefined 
+let x;       // Now x is undefined
+
+//null 
+let x=null;       // Now x is null
+
+// Strings:
+let color = "Yellow";
+let lastName = "Johnson";
+
+// Booleans
+let x = true;
+let y = false;
+
+// Object:
+const person = {firstName:"John", lastName:"Doe"};
+
+// Array object:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Date object:
+const date = new Date("2022-03-25");
+```
+ ###  ***```How to check data type```***     
+ ```
+  var apple = "apple";
+  console.log(typeof apple); // string
+  
+   var number = 2052021;
+  console.log(typeof number); // number
+  
+ typeof "John"                 // Returns "string"
+typeof 3.14                   // Returns "number"
+typeof NaN                    // Returns "number"
+typeof false                  // Returns "boolean"
+typeof [1,2,3,4]              // Returns "object"
+typeof {name:'John', age:34}  // Returns "object"
+typeof new Date()             // Returns "object"
+typeof function () {}         // Returns "function"
+typeof myCar                  // Returns "undefined" *
+typeof null                   // Returns "object"
+ ```
+ 
+ ### ***```Type conversion```*** 
+ - In programming, type conversion is the process of **converting data of one type to another**. For example: converting String data to Number.
+ - There are two types of type conversion in JavaScript.
+ - ```Implicit Conversion``` - automatic type conversion
+ - ```Explicit Conversion``` - manual type conversion
+ 
+***More Details***: https://www.programiz.com/javascript/type-conversion#google_vignette
+
+ 
