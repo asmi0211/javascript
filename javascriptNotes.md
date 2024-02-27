@@ -296,7 +296,7 @@ var bar = function() {
 
 
 ### ***```Data Types```*** 
-![alt text](https://dotnettrickscloud.blob.core.windows.net/img/javascript/js-datatype.png)
+![alt text](https://github.com/asmi0211/javascript/blob/asmi0211-js-patch-1/images/data-types.png)
 
 ### ***example***
 ```
@@ -355,4 +355,74 @@ typeof null                   // Returns "object"
  
 ***More Details***: https://www.programiz.com/javascript/type-conversion#google_vignette
 
- 
+
+ ### ***```Operators```***
+
+JavaScript supports various types of operators, which are symbols that perform operations on operands (variables or values). Here's an overview of the different types of operators in JavaScript:
+
+**Arithmetic Operators: These are used to perform arithmetic operations like addition, subtraction, multiplication, division, etc.**
+```
++ (Addition)
+- (Subtraction)
+* (Multiplication)
+/ (Division)
+% (Modulus)
+++ (Increment)
+-- (Decrement)
+ ``` 
+**Assignment Operators: These are used to assign values to variables.**
+```
+= (Assignment)
++= (Addition assignment)
+-= (Subtraction assignment)
+*= (Multiplication assignment)
+/= (Division assignment)
+%= (Modulus assignment)
+```
+**Comparison Operators: These are used to compare two values and return a boolean result.**
+```
+== (Equality)
+=== (Strict equality)
+!= (Inequality)
+!== (Strict inequality)
+> (Greater than)
+< (Less than)
+>= (Greater than or equal to)
+<= (Less than or equal to)
+```
+**Logical Operators: These are used to perform logical operations.**
+```
+&& (Logical AND)
+|| (Logical OR)
+! (Logical NOT)
+```
+**Bitwise Operators: These are used to perform bitwise operations on binary representations of numbers.**
+```
+& (Bitwise AND)
+| (Bitwise OR)
+^ (Bitwise XOR)
+~ (Bitwise NOT)
+<< (Left shift)
+>> (Right shift)
+>>> (Unsigned right shift)
+```
+**Unary Operators: These operate on a single operand.**
+```
++ (Unary plus)
+- (Unary minus)
+++ (Prefix/postfix increment)
+-- (Prefix/postfix decrement)
+! (Logical NOT)
+```
+**Conditional (Ternary) Operator:** This is a shorthand for an if-else statement.
+```
+condition ? expr1 : expr2
+String Operators:
+
++ (Concatenation)
+```
+**Type Operators:**
+```
+typeof (Returns a string indicating the type of the operand)
+instanceof (Returns true if the object is an instance of the specified object type)
+```
