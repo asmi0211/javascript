@@ -354,7 +354,23 @@ typeof null                   // Returns "object"
  - ```Explicit Conversion``` - manual type conversion
  
 ***More Details***: https://www.programiz.com/javascript/type-conversion#google_vignette
+```
+// numeric string used with - , / , * results number type
 
+let result;
+
+result = '4' - '2'; 
+console.log(result); // 2
+
+result = '4' - 2;
+console.log(result); // 2
+
+result = '4' * 2;
+console.log(result); // 8
+
+result = '4' / 2;
+console.log(result); // 2
+```
 
  ### ***```Operators```***
 
@@ -426,3 +442,10 @@ String Operators:
 typeof (Returns a string indicating the type of the operand)
 instanceof (Returns true if the object is an instance of the specified object type)
 ```
+
+### ***```If Else Statement```***
+```
+var a = 100;
+(a < 20) ? console.log("a is lesser") : ((a == 10) ? console.log("it's equal") : console.log("its false"))
+```
+> O/P: > "its false"
