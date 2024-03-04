@@ -451,9 +451,23 @@ typeof (Returns a string indicating the type of the operand)
 instanceof (Returns true if the object is an instance of the specified object type)
 ```
 
-### ***```Dtanamically Typed```***
-```
+### ***```Dyanamically Typed```***
 JavaScript is a dynamically typed language, which means that data types of variables are determined by the value they hold at runtime and can change throughout the program as we assign different values to them.
+
+
+```
+when we convert values to boolean
+
+1 => true;
+0 => false;
+"" => false;
+"abc' => true;
+
+when we convert values to Number
+"22" => 22;
+"22abc" => Nan;
+true => 1'
+false => 0;
 ```
 ### ***```If Else Statement```***
 ```
