@@ -1,4 +1,6 @@
 # **Javascript Notes**
+### Links
+> https://github.com/hiteshchoudhary/js-hindi-youtube/blob/main/04_control_flow/truthy.js
 
 ## ***```1.DOM : Document Object Model```***
 
@@ -306,9 +308,15 @@ let weight = 7.5;
 
 //undefined 
 let x;       // Now x is undefined
+// typeof undefined is undefined
+// console.log(typeof undefined);
+//O/P: undefined
 
 //null 
 let x=null;       // Now x is null
+// typeof null is an object
+// console.log(typeof null);
+// O/P: object
 
 // Strings:
 let color = "Yellow";
@@ -443,9 +451,15 @@ typeof (Returns a string indicating the type of the operand)
 instanceof (Returns true if the object is an instance of the specified object type)
 ```
 
+### ***```Dtanamically Typed```***
+```
+JavaScript is a dynamically typed language, which means that data types of variables are determined by the value they hold at runtime and can change throughout the program as we assign different values to them.
+```
 ### ***```If Else Statement```***
 ```
 var a = 100;
 (a < 20) ? console.log("a is lesser") : ((a == 10) ? console.log("it's equal") : console.log("its false"))
 ```
 > O/P: > "its false"
+
+
