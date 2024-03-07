@@ -477,3 +477,41 @@ var a = 100;
 > O/P: > "its false"
 
 
+### ***```Switch case```***
+```
+switch (key)
+case 1: value
+
+	break;
+
+case 2: value
+
+	break;
+
+default: 
+	break;
+```
+**I-NOTE:** if we don't add break then all the code from match case excuted except default case, so adding break is necessary
+
+**falsy Value**
+False,0,BigInt 0n, empty string, null, undefined, NaN
+
+**Truthy value**
+empty array, empty parenthesis, "0", 'false' - beacuse it's in string, " ", [],{},function(){} - empty function
+
+false == 0 > true
+false == '' > true
+0 == '' > true
+
+### ***```Nullish Coalescing Operator (??): null undefined```***
+The nullish coalescing (??) operator is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.
+
+```
+const foo = null ?? 'default string';
+console.log(foo);
+// Expected output: "default string"
+
+const baz = 0 ?? 42;
+console.log(baz);
+// Expected output: 0
+```
