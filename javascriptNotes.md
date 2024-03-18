@@ -516,3 +516,17 @@ console.log(baz);
 // Expected output: 0
 ```
 [see more](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing)
+
+### ***```AND Operator (&&)```***
+AND operator returns **True** only if **all oprands are True**, otherwise returns False.
+TT=>T, otherwise F
+
+**If both sides are True then return Right hand side**
+
+### ***```OR Operator (||)```***
+OR operator returns **False** only if **all oprands are False**, otherwise returns True.
+FF=>F, otherwise T
+
+**If both sides are False then return Left hand side**
+
+**Note:** && excutes first before || 
