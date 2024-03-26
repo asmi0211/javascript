@@ -541,7 +541,7 @@ FF=>F, otherwise T
 - forEach loop
 - map Loop
 
-**For Loop**
+**For Loop:**
 ```
 for (Initialization; Condition; Increment) {
  console.log(i);
@@ -554,8 +554,9 @@ for (let i = 0; i < 4; i++) {
 }
 ```
 
-**While Loop**
+**While Loop:**
 A while loop is used when you don’t know how many times you need to repeat a block of code, but you know the condition that will end the loop.
+
 Ex: 
 ```
 let i = 0;
@@ -565,7 +566,7 @@ while (i < 6) {
 }
 ```
 
-**Do While Loop**
+**Do While Loop:**
 A do-while loop is similar to a while loop, but the block of code is executed at least once, even if the condition is false.
 Ex: 
 ```
@@ -576,7 +577,7 @@ i++;
 } while (i < 6);
 ```
 
-**For In Loop**
+**For In Loop:**
 A for-in loop is used to loop through the properties of an object.
 
 Ex: 
@@ -592,7 +593,7 @@ b: 4
 c: 7
 ```
 
-**For Each Loop**
+**For Each Loop:**
 A forEach loop is a method on arrays that executes a function for each element in the array.
 Ex: 
 ```
@@ -605,7 +606,7 @@ O/P:
 3
 ```
 
-**Map Loop**
+**Map Loop:**
 A map loop is a method on arrays that creates a new array by executing a function on each element in the array.
 Ex: 
 ```
