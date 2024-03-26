@@ -530,3 +530,89 @@ FF=>F, otherwise T
 **If both sides are False then return Left hand side**
 
 **Note:** && excutes first before || 
+
+
+### ***```Loops```*** 
+- for Loop
+- while Loop
+- do-while Loop
+- for-in Loop
+- for-of Loop
+- forEach loop
+- map Loop
+
+**For Loop**
+```
+for (Initialization; Condition; Increment) {
+ console.log(i);
+}
+```
+Ex: 
+```
+for (let i = 0; i < 4; i++) {
+ console.log(i);
+}
+```
+
+**While Loop**
+A while loop is used when you don’t know how many times you need to repeat a block of code, but you know the condition that will end the loop.
+Ex: 
+```
+let i = 0;
+while (i < 6) {
+  console.log(i);
+  i++;
+}
+```
+
+**Do While Loop**
+A do-while loop is similar to a while loop, but the block of code is executed at least once, even if the condition is false.
+Ex: 
+```
+let i = 0;
+do {
+console.log(i);
+i++;
+} while (i < 6);
+```
+
+**For In Loop**
+A for-in loop is used to loop through the properties of an object.
+
+Ex: 
+```
+const obj = {a: 1, b: 4, c: 7};
+
+for (let prop in obj) {
+console.log(prop + ': ' + obj[prop]);
+}
+O/P:
+a: 1
+b: 4
+c: 7
+```
+
+**For Each Loop**
+A forEach loop is a method on arrays that executes a function for each element in the array.
+Ex: 
+```
+const arr = [1, 2, 3];
+arr.forEach(val => console.log(val));
+
+O/P:
+1
+2
+3
+```
+
+**Map Loop**
+A map loop is a method on arrays that creates a new array by executing a function on each element in the array.
+Ex: 
+```
+const arr = [1, 2, 3];
+const newArr = arr.map(val => val * 2);
+console.log(newArr);
+
+O/P:
+[ 2, 4, 6 ]
+```
